@@ -20,5 +20,5 @@ recognition.onresult = (event) =>{
     console.log(event);
     const texto = event.results[0][0].transcript;
     console.log(texto);
-    textArea.value = texto;
+    textArea.value = textArea.value +' '+ texto;
 }
